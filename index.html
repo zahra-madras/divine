@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Clothing Website</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <div class="logo">FashionHub</div>
+    <nav>
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Shop</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+    </nav>
+    <div class="cart">🛒 (<span id="cart-count">0</span>)</div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <h1>Shop the Latest Trends</h1>
+      <p>Find your perfect outfit today!</p>
+    </section>
+
+    <section class="products">
+      <h2>Our Collection</h2>
+      <div class="filter">
+        <label for="category-filter">Filter by Category:</label>
+        <select id="category-filter">
+          <option value="all">All</option>
+          <option value="men">Men</option>
+          <option value="women">Women</option>
+          <option value="accessories">Accessories</option>
+        </select>
+      </div>
+      <div class="product-grid" id="product-grid">
+        <!-- Products will be dynamically loaded here -->
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2024 FashionHub. All rights reserved.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
