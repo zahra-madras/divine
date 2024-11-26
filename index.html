@@ -10,9 +10,19 @@
 </head>
 <body>
   <header>
-    <div class="logo" style="background-image: url('IMG-20241125-WA0003.jpg');">Divine
+    <div class="logo" >Divine
       
-    
+    <!-- Responsive image that adapts to screen size -->
+<img 
+src="IMG-20241125-WA0003.jpg" 
+srcset="small-image.jpg 500w, 
+        medium-image.jpg 1000w, 
+        large-image.jpg 1500w"
+sizes="(max-width: 600px) 500px,
+       (max-width: 1200px) 1000px,
+       1500px"
+alt="Divine logo"
+>
     <nav>
       <ul>
         <li><a href="#">Home</a></li>
